@@ -1,0 +1,112 @@
+<script src="verification.js" type="text/javascript"></script>
+<!--
+	Adebanke Alabi
+	May 8-10th, 2012
+-->
+
+<div align="center">
+	<img src="../images/ColoredCobecTree.jpg"/>
+</div>
+<center>
+<h2>SUMMER CONFERENCE 2012</h2>
+<P>		
+	THE UNIVERSITY OF MISSISSIPPI<br>
+	JULY 25-27, 2012<br>
+	YERBY CONFERENCE CENTER<br>
+	OXFORD, MISSISSIPPI
+</p>
+</center>
+
+<form method="post" id="cobecform" style="clear:both; width: auto;" onSubmit="return verify()" action="send.php">
+
+<table width="80%" cellpadding="10" align="center" border="1" cellspacing="0" bordercolor="#BBBBBB">
+	<tr>
+		<td><strong>NAME</strong></td>
+		<td><input type="text" class="someText" name="First Name" size="25"/><br>
+		First Name*</td>
+		<td><input type="text" class="someText" name="Last Name" size="25"/><br>
+		Last Name*</td>
+	</tr>
+	<tr>
+		<td><strong>INSTITUTION*</strong></td>
+		<td colspan="2"><input type="text" class="someText" name="Institution" size="50"/></td>
+	</tr>
+	<tr>
+		<td><strong>ADDRESS</strong></td>
+		<td colspan="2"><input type="text" class="someText" name="Street Address" size="50"/><br>
+		Street Address*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="text" class="someText" name="City" size="25"/><br>
+		City*</td>
+		<td><input type="text" class="someText" name="State" size="25"/><br>
+		State*</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="text" class="someText" name="Zip" size="25"/><br>
+		Zip Code*</td>
+		<td><input type="text" class="someText" name="Country" size="25"/><br>
+		Country*</td>
+	</tr>
+	<tr>
+		<td><strong>EMAIL*</strong></td>
+		<td colspan="2"><input type="text" name="Email" size="25" class="email"/></td>
+	</tr>
+	<tr>
+		<td><strong>PHONE*</strong></td>
+		<td colspan="2"><input type="text" name="Phone" size="25" class="number"/></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td colspan="2"><strong>I WILL ATTEND THE CONFERENCE ON WHICH OF THE FOLLOWING DAYS?</strong>* &nbsp; &nbsp;
+		  <input type="checkbox" class="checkbox" name="I will attend the Conference on the 25th" value="yes" />25<sup>TH</sup> &nbsp; &nbsp;
+		<input type="checkbox" class="checkbox" name="I will attend the Conference on the 26th" value="yes"/>26<sup>TH</sup> &nbsp; &nbsp;
+		<input type="checkbox" class="checkbox" name="I will attend the Conference on the 27th" value="yes"/>27<sup>TH</sup></td>
+	</tr>
+	<tr>
+		<td></td>
+	  <td colspan="2">
+		  I PLAN TO USE THE SHUTTLE ON JULY 24<sup>TH</sup> AT 9:30 P.M.*
+		  <input type="radio" class="radio" name="I plan to use the shuttle on July 24th at 9:30pm" value="yes"/>Yes
+		  <input type="radio" class="radio" name="I plan to use the shuttle on July 24th at 9:30pm" value="no"/>No
+	   </td>
+	</tr>
+	<tr>
+		<td></td>
+	  <td colspan="2">
+		  I PLAN TO USE THE SHUTTLE ON  JULY 27<sup>TH</sup> AT 1:30 P.M.*
+		  <input type="radio" class="radio" name="I plan to use the shuttle on July 27th at 1:30pm" value="yes"/>Yes
+		  <input type="radio" class="radio" name="I plan to use the shuttle on July 27th at 1:30pm" value="no"/>No
+	  </td>
+	</tr>
+<!--		<tr>
+		<td colspan="3">(REQUIRES CONFIRMATION BY EMAIL <A href="mailto:kshackel@olemiss.edu">kshackel@olemiss.edu</A>)</td>
+	</tr>-->
+	<tr>
+		<td><strong>PAYMENT*</strong></td>
+		<td colspan="2"><input type="radio" class="radio" name="Payment" value="$125 US MEMBER"/>$125 US MEMBER &nbsp; &nbsp;
+		<input type="radio" class="radio" name="Payment" value="$125 BZ MEMBER"/>$125 BZ MEMBER</td>
+	</tr>
+	<tr>
+		<td><strong>PAYMENT METHOD*</strong></td>
+		<td colspan="2"><input type="radio" class="radio" name="Payment Method" value="Check in mail"/>Check in Mail &nbsp; &nbsp; &nbsp;
+		<input type="radio" class="radio" name="Payment Method" value="Payment on site"/>Payment on Site</td>
+	</tr>
+	<tr>
+		<td></td>
+	  <td colspan="2"><input type="checkbox" name="I have special diet restrictions"/>
+		  I have special diet restrictions. Please describe:<br>
+		  <textarea name="My diet Restictions" cols="55" rows="3"></textarea></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<strong id="errorNotification" style="color:Red;"></strong>
+			<input type="submit" value="Register" style="float:right"/>
+		</td>
+	</tr>
+</table>
+
+</form>
+
